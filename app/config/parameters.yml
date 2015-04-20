@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: droxy.fr
+    database_port: null
+    database_name: transversal
+    database_user: transversal
+    database_password: abx24z4hb9
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: fr
+    secret: f94b56ef7650e144f89d38c2c793e8cf3c218015
