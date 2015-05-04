@@ -1,7 +1,20 @@
-{% extends 'AppBundle::front-layout.html.twig' %}
+{% extends '::base.html.twig' %}
 
 {% block body %}
 
     {{ parent() }}
+    <div id="header">
+        <div id="title">Sexcret</div>
+        <div id="menu">
+            <ul>
+                <li>Le concept</li>
+                <li>Découvrir</li>
+                <li>S'abonner</li>
+                <li>Produit du mois</li>
+                <li>L'offrir</li>
+                <li>Mon compte</li>
+            </ul>
+        </div>
+    </div>
 
 {% endblock %}
