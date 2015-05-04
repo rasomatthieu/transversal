@@ -78,5 +78,11 @@ table {
 #menu li {
     float: left;
     margin-left: 20px;
+    font-size: 1.3vw;
+}
+
+#menu li:hover {
+    cursor: pointer;
+    color: #000000;
 }
 
