@@ -1,6 +1,9 @@
 {% extends "AppBundle::front-layout.html.twig" %}
 
 {% block body %}
+
+    {{ parent() }}
+
     {% if error %}
         <div>{{ error|trans({}, 'FOSUserBundle') }}</div>
     {% endif %}
