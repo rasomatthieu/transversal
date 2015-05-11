@@ -19,6 +19,7 @@ class User extends BaseUser
 
     /**
      * @ORM\OneToOne(targetEntity="AppBundle\Entity\Information", mappedBy="user")
+     * @ORM\JoinColumn(nullable=true)
      */
     private $information;
 

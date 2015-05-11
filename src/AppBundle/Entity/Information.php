@@ -15,7 +15,7 @@ class Information
 
     /**
      * @ORM\OneToOne(targetEntity="AppBundle\Entity\Information", inversedBy="information")
-     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id", nullable=true)
      */
     private $user;
 
