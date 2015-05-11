@@ -12,6 +12,14 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Information
 {
+
+    /**
+     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Information", inversedBy="information")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    private $user;
+
+
     /**
      * @var integer
      *
@@ -240,5 +248,28 @@ class Information
     public function getPhonemobile()
     {
         return $this->phonemobile;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \AppBundle\Entity\Information $user
+     * @return Information
+     */
+    public function setUser(\AppBundle\Entity\Information $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \AppBundle\Entity\Information 
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }

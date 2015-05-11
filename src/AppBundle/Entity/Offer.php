@@ -12,6 +12,12 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Offer
 {
+
+    /**
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Product")
+     */
+    private $products;
+
     /**
      * @var integer
      *
@@ -120,5 +126,45 @@ class Offer
     public function getPrice()
     {
         return $this->price;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->products = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add products
+     *
+     * @param \AppBundle\Entity\Products $products
+     * @return Offer
+     */
+    public function addProduct(\AppBundle\Entity\Products $products)
+    {
+        $this->products[] = $products;
+
+        return $this;
+    }
+
+    /**
+     * Remove products
+     *
+     * @param \AppBundle\Entity\Products $products
+     */
+    public function removeProduct(\AppBundle\Entity\Products $products)
+    {
+        $this->products->removeElement($products);
+    }
+
+    /**
+     * Get products
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getProducts()
+    {
+        return $this->products;
     }
 }

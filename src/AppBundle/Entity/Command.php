@@ -13,6 +13,16 @@ use Doctrine\ORM\Mapping as ORM;
 class Command
 {
     /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Offer")
+     */
+    private $offer;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Payment")
+     */
+    private $payment;
+
+    /**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer")
@@ -210,5 +220,51 @@ class Command
     public function getPhone()
     {
         return $this->phone;
+    }
+
+    /**
+     * Set offer
+     *
+     * @param \AppBundle\Entity\Offer $offer
+     * @return Command
+     */
+    public function setOffer(\AppBundle\Entity\Offer $offer = null)
+    {
+        $this->offer = $offer;
+
+        return $this;
+    }
+
+    /**
+     * Get offer
+     *
+     * @return \AppBundle\Entity\Offer 
+     */
+    public function getOffer()
+    {
+        return $this->offer;
+    }
+
+    /**
+     * Set payment
+     *
+     * @param \AppBundle\Entity\Payment $payment
+     * @return Command
+     */
+    public function setPayment(\AppBundle\Entity\Payment $payment = null)
+    {
+        $this->payment = $payment;
+
+        return $this;
+    }
+
+    /**
+     * Get payment
+     *
+     * @return \AppBundle\Entity\Payment 
+     */
+    public function getPayment()
+    {
+        return $this->payment;
     }
 }
