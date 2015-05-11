@@ -1,0 +1,6 @@
+{% extends "AppBundle::front-layout.html.twig" %}
+
+{% block body %}
+    {{ parent() }}
+{% include "FOSUserBundle:Profile:show_content.html.twig" %}
+{% endblock body %}
