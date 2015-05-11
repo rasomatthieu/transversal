@@ -52,6 +52,11 @@ table {
     src: url('../fonts/Arual.ttf');
 }
 
+@font-face {
+    font-family: 'basic title';
+    src: url('../fonts/basictitlefont.ttf');
+}
+
 #header {
     width: 100%;
     min-width: 800px;
@@ -70,7 +75,7 @@ table {
 #menu {
     color: white;
     float: right;
-    margin-right: 80px;
+    margin-right: 10px;
     margin-top: 15px;
     font-family: 'Exo', sans-serif;
 }
@@ -79,10 +84,47 @@ table {
     float: left;
     margin-left: 20px;
     font-size: 1.3vw;
+    transition: 0.3s all;
 }
 
 #menu li:hover {
     cursor: pointer;
     color: #000000;
+}
+
+#chuu {
+    float: right;
+    height: 50px;
+    width: 54px;
+}
+
+#chuu img {
+    height: 50px;
+}
+
+#subscribe {
+    background-image: url('../images/sub-bg.png');
+    height: 700px;
+    width: 100%;
+    color: white;
+    padding-top: 5%;
+}
+
+#subscribe h1 {
+    margin-left: 25%;
+    font-family: 'basic title';
+    font-size: 4vw;
+}
+
+#subscribe p {
+    font-family: 'Exo';
+    font-size:  3vw;
+    margin-left: 32%;
+}
+
+#subscribe img {
+    margin-top: 5%;
+    margin-left: 35%;
+    height: 300px;
 }
 
