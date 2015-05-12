@@ -1,7 +1,7 @@
 <?php
-namespace Website\Controller;
-use Symfony\Component\Yaml\Parser;
-abstract class AbstractBaseController{
+    namespace Website\Controller;
+    use Symfony\Component\Yaml\Parser;
+    abstract class AbstractBaseController{
     public function getConnection(){
         $config = new \Doctrine\DBAL\Configuration();
         $yaml = new Parser();
