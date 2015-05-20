@@ -137,6 +137,19 @@ table {
     height: 300px;
 }
 
+#subscribe button {
+    -webkit-border-radius: 3;
+    -moz-border-radius: 3;
+    border-radius: 3px;
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 20px;
+    background: #e26a6a;
+    padding: 6px 40px 6px 40px;
+    border: solid #FFFFFF 0px;
+    text-decoration: none;
+}
+
 #month-product {
     height: 700px;
     width: 100%;
@@ -219,3 +232,124 @@ table {
     background-color: #e26a6a;
 }
 
+#login-title {
+    font-family: 'basic title';
+    color: #3b1311;
+    font-size: 3vw;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#username, #password {
+    border-width:2px;
+    border-color:#aaaaaa;
+    border-style:solid;
+    width: 500px;
+    padding:10px;
+    font-size:14px;
+    border-radius:5px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#div-remember {
+    text-align: center;
+    margin: 20px;
+    color: #3b1311;
+    font-family: Arial;
+}
+
+#remember_me {
+    margin-right: 30px;
+}
+
+#_submit {
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 0px #666666;
+    -moz-box-shadow: 0px 1px 0px #666666;
+    box-shadow: 0px 1px 0px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    background: #e26a6a;
+    font-size: 20px;
+    font-family: 'Helvetica neue;;
+    padding: 3px 33px 1px 33px;
+    border: solid #e26a6a 1px;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+}
+
+#login-p-compte {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#login-p-compte a, #login-p-compte a:hover, #login-p-compte a:visited {
+    color: #a1a1a1;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+#login-p {
+    margin-top: 30px;
+    color: #545454;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Arial;
+}
+
+#register-title {
+    font-family: "basic title";
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ins_champtext {
+    border-width:2px;
+    border-color:#aaaaaa;
+    border-style:solid;
+    width: 500px;
+    padding:10px;
+    font-size:14px;
+    border-radius:5px;
+    display: block;
+    margin: auto;
+}
+
+#ins_checkb {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ins_submit {
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 0px #666666;
+    -moz-box-shadow: 0px 1px 0px #666666;
+    box-shadow: 0px 1px 0px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #434343;
+    padding: 3px 33px 1px 33px;
+    border: solid #e26a6a 1px;
+    text-decoration: none;
+    background-color: #e26a6a;
+}
+
+#register-p-compte {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#register-p-compte a, #register-p-compte a:hover, #register-p-compte a:visited {
+    color: #a1a1a1;
+    text-decoration: none;
+    font-family: Arial;
+}

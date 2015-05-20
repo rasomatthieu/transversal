@@ -1,5 +1,13 @@
-{% extends "UserBundle::layout.html.twig" %}
+{% extends "AppBundle::front-layout.html.twig" %}
 
 {% block body %}
 {% include "FOSUserBundle:Registration:register_content.html.twig" %}
+    <h1 id="register-title">Inscrivez-vous</h1>
+    <input type="text" name="id" placeholder="Nom de l'utilisateur" class="ins_champtext"><br>
+    <input type="text" name="email" placeholder="Email" class="ins_champtext"><br>
+    <input type="text" name="psw" placeholder="Mot de passe" class="ins_champtext"><br>
+    <input type="text" name="verif" placeholder="Vérification" class="ins_champtext"><br>
+    <div id="ins_checkb"><input type="checkbox" name="abo">S'abonner à la newsletter<div><br>
+    <input type="submit" value="Connexion" class="ins_submit">
+    <p id="register-p-compte"><a href="">Vous avez déjà un compte ? Connectez-vous</a></p>
 {% endblock body %}

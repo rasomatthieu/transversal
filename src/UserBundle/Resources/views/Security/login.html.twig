@@ -8,18 +8,22 @@
         <div>{{ error|trans({}, 'FOSUserBundle') }}</div>
     {% endif %}
 
+    <h1 id="login-title">connectez - vous</h1>
+
     <form action="{{ path("fos_user_security_check") }}" method="post">
         <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
-        <label for="username">{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}</label>
-        <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+        <input type="text" id="username" placeholder="Email" name="_username" value="{{ last_username }}" required="required" />
 
-        <label for="password">{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}</label>
-        <input type="password" id="password" name="_password" required="required" />
+        <input type="password" id="password" placeholder="Mot de passe" name="_password" required="required" />
+        <div id="div-remember">
+            <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+            <label for="remember_me">{{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}</label>
+        </div>
 
-        <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-        <label for="remember_me">{{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}</label>
 
         <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" />
+        <p id="login-p-compte"><a href="#">Vous n’avez pas de compte? Inscrivez-vous</a></p>
+        <p id="login-p">Veuillez entrer un pseudo et un mot de passe</p>
     </form>
 {% endblock %}
