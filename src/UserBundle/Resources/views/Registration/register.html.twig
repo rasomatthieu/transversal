@@ -1,6 +1,9 @@
 {% extends "AppBundle::front-layout.html.twig" %}
 
 {% block body %}
+
+    {{ parent() }}
+
 {% include "FOSUserBundle:Registration:register_content.html.twig" %}
     <h1 id="register-title">Inscrivez-vous</h1>
     <input type="text" name="id" placeholder="Nom de l'utilisateur" class="ins_champtext"><br>
